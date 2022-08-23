@@ -22,46 +22,46 @@
         Let me show you the normal text. This is free flowing and will wrap
         at the end like a paragraph
     </p>
+    <p>This paragraph will have<strong>Bold</strong> text</p>
     <small>This is a way more smaller text</small>
     <hr />
 
     <h2>@container</h2>
 
     <h3>Fluid container</h3>
-    <div>This is a fluid container and it will go till end of the page</div>
+    <div class="Container">This is a fluid container and it will go till end of the page</div>
 
     <h3>Center Container</h3>
-    <div>This is a centered container and it will go till the specified width</div>
+    <div class="Container container-center">This is a centered container and it will go till the specified width</div>
     <hr />
 
     <h2>@links</h2>
     
-    <a href="/">Primary Link</a>
+    <a class="Links --primary-link" href="/">Primary Link</a>
 
-    <a href="/">Secondary Link</a>
-
+    <a class="Links secondary-link" href="/">Secondary Link</a>
     <hr />
 
 
     <h2>@Lists</h2>
     <h3>unordered Lists</h3>
-
-    <ul>
+    <p>This list wont have bullets</p>
+    <ul class="list-non-bullet">
         <li>Item one</li>
         <li>Item two</li>
         <li>Item Three</li>
 
     </ul>
     <h3>Un order inline list</h3>
-    <ul>
-        <li>Inline itemone</li>
-        <li>Inline item two</li>
-        <li>Inline item three</li>
+    <ul class="list-non-bullet">
+        <li class="list-item-inline">Inline itemone</li>
+        <li class="list-item-inline">Inline item two</li>
+        <li class="list-item-inline">Inline item three</li>
     </ul>
 
     <h3>Reverese ordered list
     </h3>
-    <ul>
+    <ul reversed>
         <li>Reverse order one</li>
         <li>Reverse order two</li>
         <li>Reverese order three</li>
@@ -69,17 +69,17 @@
 
     <hr />
     <h1>@Nav</h1>
-    <nav>
-        <div>I am Brand</div>
-        <ul>
-            <li>
-                <a href="/">Home</a>
+    <nav class="navigation conatiner">
+        <div class="nav-brand">I am Brand</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a  class="link link-active" href="/">Home</a>
             </li>
-            <li>
-                <a href="/">Products</a>
+            <li class="list-item-inline">
+                <a class="link link-active"  href="/">Products</a>
             </li>
-            <li>
-                <a href="/">About</a>
+            <li class="list-item-inline">
+                <a class="link link-active"  href="/">About</a>
             </li>
         </ul>
     </nav>
@@ -90,35 +90,44 @@
         header
     </h2>
 
-    <header>
-        <img src="hero.svg" alt="image">
-        <h1>Heading inside the hero</h1>
+    <header class="hero">
+        <img class="hero-img"src="hero.svg" alt="image">
+        <h1 class="hero-heading">Shabrez <span class="heading-inverted">Web developer</span></h1>
     </header>
     <hr>
 
     <h1>@Section</h1>
-    <section>
+    <section class="section">
     <h2>Section</h2>
-    <h3>Wided Section</h3>
-    <p>this will have wide background</p>
-    <p>This gives end to end with a little margin </p>
+    <div class="container-center">
+        <h1>Wided Section</h1>
+        <p>this will have wide background</p>
+        <p>This gives end to end with a little margin </p>
 
+    </div>
+    
     </section>
-    <section>
-        <h3>off white section</h3>
-        <p>This will have gray background</p>
+    <section class="section ow">
+        <div class="conatiner-center">
+            <h1>off white section</h1>
+            <p>This will have gray background</p>
+        </div>
+       
     </section>
 
     <hr>
 
     <h1>@footer</h1>
 
-    <footer>
-        <div>some small heading inside footer</div>
-        <ul>
-            <li>socialone</li>
-            <li>socialtwo</li>
-            <li>socialthree</li>
+    <footer class="footer">
+        <div class="fotter-header">some small heading inside footer</div>
+        <ul class="social-links list-non-bullet">
+            <li><a class="link "href="/">socialone</a>
+            </li>
+            <li><a class="link "href="/">socialtwo</a>
+            </li>
+            <li><a class="link "href="/">socialthree</a>
+                </li>
         </ul>
     </footer>
 
