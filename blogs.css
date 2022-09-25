@@ -3,7 +3,7 @@
 :root{
     --primary-color: #3c6eab;
     --dark-gray: #38393a;
-    --off-white: #e1e2e5;
+    --off-white: #e6e7e7;
     --link-button: rgb(17, 176, 229);
     
 }
@@ -11,7 +11,7 @@
 body{
     font-family:'Times New Roman', Times, serif;
     margin: 0px;
-    background-color: rgb(239, 239, 239);
+    background-color: var(--off-whites)
 }
 
 hr{
@@ -21,15 +21,15 @@ hr{
 /* .container */
 
 .container{
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     margin: 50px auto;
 }
 
 .container-center{
-    max-width: 600px;
+    max-width: 300px;
     margin: auto;
-    font-size: larger;
+    font-size: large;
 }
 
 /* Links */
@@ -56,14 +56,16 @@ hr{
     background-color:var(--link-button);
     border-radius: 0.5rem;
     color: rgb(206, 45, 184);
+    font-size: small;
 }
 
 .secondary-link{
     color: var(--link-button);
     border-radius: 0.5rem;
     border: 1px solid var(--primary-color);
-
+    font-size: small;
 }
+
 
 
 /* LISTS */
@@ -146,32 +148,40 @@ hr{
 /* sections */
 
 .section{
-    padding: 0.5rem;
+    padding: 0.9rem;
     text-align: center;
 }
 
-.section h2{
-    text-align: left;
+.section h1{
+    text-align: center;
+    font-size: 20px;
 
 }
 
-.section .para{
-    text-align: left;
+.section p{
+    text-align: center;
+    font-size: 15px;
+}
+
+.section small{
+    margin-bottom: 2px;
+    font-size: small;
 }
 
 
 .section h1{
     text-align: center;
-    padding: 0.3rem;
+    /* padding: 0.1rem; */
 
 }
 
 .section a{
     padding: 7px;
+    margin: auto;
     border: 0.5rem;
     border-radius: 0.3rem;
     background-color:#7198be;
-    color: var(--off-white);
+    color:rgb(197, 199, 199);
     text-shadow:0.5px 0.5px 1.5px #000;
 }
 
