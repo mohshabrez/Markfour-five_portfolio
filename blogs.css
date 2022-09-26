@@ -56,7 +56,7 @@ hr{
     background-color:var(--link-button);
     border-radius: 0.5rem;
     color: rgb(206, 45, 184);
-    font-size: small;
+    font-size: large;
 }
 
 .secondary-link{
@@ -107,7 +107,7 @@ hr{
 }
 
 .link-active:hover{
-    color:beige;
+    color:rgb(237, 237, 172);
     /* background-color: #4c9dee; */
 }
 
